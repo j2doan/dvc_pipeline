@@ -7,7 +7,9 @@ authors = [
     { name = "j2doan", email = "j2.doan@san.rr.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "ruff>=0.15.13",
+]
 
 [project.scripts]
 dvc-pipeline = "dvc_pipeline:main"
