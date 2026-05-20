@@ -15,6 +15,7 @@ df.dropna(subset=["duration_seconds"], inplace=True)
 df = df[df["duration_seconds"] > 0]
 
 df = df[df["event_type"].str.lower().isin(VALID_EVENT_TYPES)]
+df["event_type"] = df["event_type"].str.lower()
 
 
 def normalize_ts(ts):
