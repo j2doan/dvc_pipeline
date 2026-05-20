@@ -12,11 +12,11 @@ stages:
       - data/clean/events.csv
       - src/transform.py
     outs:
-      - data/transform/events.csv
+      - data/transformed/events.csv
   features:
     cmd: python src/features.py
     deps:
-      - data/transform/events.csv
+      - data/transformed/events.csv
       - src/features.py
     outs:
       - data/features/events.csv
