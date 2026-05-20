@@ -791,6 +791,7 @@ dependencies = [
     { name = "marimo" },
     { name = "matplotlib" },
     { name = "pandas" },
+    { name = "python-dateutil" },
     { name = "ruff" },
 ]
 
@@ -805,6 +806,7 @@ requires-dist = [
     { name = "marimo", specifier = ">=0.23.6" },
     { name = "matplotlib", specifier = ">=3.10.9" },
     { name = "pandas", specifier = ">=3.0.3" },
+    { name = "python-dateutil", specifier = ">=2.9.0.post0" },
     { name = "ruff", specifier = ">=0.15.13" },
 ]
 
